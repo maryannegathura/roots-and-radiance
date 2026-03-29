@@ -1,0 +1,35 @@
+.section1 {
+  /* Roots &<br/>Radiance */
+  color: black;
+  font-size: 40px;
+  font-family: Italiana;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section2 {
+  /* HOME */
+  color: white;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section3 {
+  /* SHOP */
+  color: white;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section4 {
+  /* CART */
+  color: white;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}

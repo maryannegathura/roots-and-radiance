@@ -1,0 +1,146 @@
+.section1 {
+  /* Roots &<br/>Radiance */
+  color: black;
+  font-size: 40px;
+  font-family: Italiana;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section2 {
+  /* HOME */
+  color: white;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section3 {
+  /* SHOP */
+  color: white;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section4 {
+  /* CART */
+  color: white;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section5 {
+  /* Hair Oils */
+  color: black;
+  font-size: 64px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Prices */
+.section6, .section7, .section8, .section9, .section10,
+.section11, .section12, .section13, .section14, .section15,
+.section16, .section17, .section18 {
+  /* Price */
+  color: black;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section19 {
+  /* Hair Serums */
+  color: black;
+  font-size: 64px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Content description */
+.section20, .section22, .section24, .section26, .section28, .section30 {
+  color: black;
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Titles */
+.section21, .section23, .section25, .section27, .section29 {
+  color: black;
+  font-size: 32px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Prices (bigger ones) */
+.section31, .section33, .section35, .section37, .section39 {
+  color: black;
+  font-size: 20px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section40 {
+  /* Hair Cleanse */
+  color: black;
+  font-size: 64px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section41 {
+  /* Hair Cleanse */
+  color: black;
+  font-size: 64px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section42, .section44, .section46, .section48 {
+  /* Product Names */
+  color: black;
+  font-size: 32px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section43, .section45, .section47, .section49 {
+  /* Prices */
+  color: black;
+  font-size: 20px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section50, .section52, .section54, .section56 {
+  /* Content */
+  color: black;
+  font-size: 13px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section57 {
+  /* @ Roots & Radiance 2026. */
+  color: black;
+  font-size: 16px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}

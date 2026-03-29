@@ -1,0 +1,59 @@
+.section1 {
+  /* Roots &<br/>Radiance */
+  color: black;
+  font-size: 40px;
+  font-family: Italiana;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section2, .section3, .section4 {
+  /* HOME / SHOP / CART */
+  color: white;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Product Titles */
+.section5, .section10, .section12, .section14, .section16,
+.section19, .section21, .section23, .section25, .section27,
+.section29, .section31, .section33, .section35, .section37,
+.section39, .section41, .section43, .section45 {
+  color: black;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Section Headings */
+.section8, .section18, .section28, .section36 {
+  color: black;
+  font-size: 64px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Prices */
+.section6, .section7, .section9, .section11, .section13,
+.section15, .section17, .section20, .section22, .section24,
+.section26, .section30, .section32, .section34, .section38,
+.section40, .section42, .section44 {
+  color: black;
+  font-size: 16px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section46 {
+  /* @ Roots & Radiance 2026. */
+  color: black;
+  font-size: 16px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}

@@ -1,0 +1,107 @@
+.section1 {
+  /* Roots &<br/>Radiance */
+  color: black;
+  font-size: 40px;
+  font-family: Italiana;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section2 {
+  /* HOME */
+  color: white;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section3 {
+  /* SHOP */
+  color: white;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section4 {
+  /* CART */
+  color: white;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section5 {
+  /* Main Ingredients:<br/> */
+  color: black;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section6 {
+  /* Aloe Vera<br/> Jojoba Oil<br/> Sweet Almond Oil<br/> */
+  color: black;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section7 {
+  /* <br/>Purpose:<br/> */
+  color: black;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section8 {
+  /* Lightweight daily hydration<br/> Softens and smooths skin<br/> Leaves a fresh, radiant glow */
+  color: black;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section9 {
+  /* Body Oils */
+  color: black;
+  font-size: 64px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Reusable ingredient + purpose blocks */
+.section10, .section12, .section14, .section16, .section18, .section20 {
+  color: black;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Prices */
+.section11, .section13, .section15, .section17, .section19, .section21 {
+  color: black;
+  font-size: 24px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.section22 {
+  /* @ Roots & Radiance 2026. */
+  color: black;
+  font-size: 16px;
+  font-family: Cormorant Garamond;
+  font-weight: 400;
+  word-wrap: break-word;
+}
