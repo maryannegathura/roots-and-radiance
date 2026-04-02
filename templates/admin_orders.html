@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orders - Admin</title>
+    <style>
+        body { font-family: Arial; background: #f8f8f8; margin: 0; padding: 20px; }
+        .header { background: linear-gradient(#228B22, #90EE90); color: white; padding: 1rem; margin: -20px -20px 20px; }
+        table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #8B4513; color: white; }
+        select { padding: 5px; border-radius: 3px; }
+        button { padding: 5px 10px; background: #228B22; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        a { color: #228B22; float: right; }
+        .status { padding: 4px 8px; border-radius: 20px; font-size: 0.8em; }
+        .pending { background: #fff3cd; color: #856404; }
+        .confirmed { background: #d4edda; color: #155724; }
+        .shipped { background: #cce5ff; color: #004085; }
+        .delivered { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Orders Management</h1>
+        <a href="{{ url_for('admin.dashboard') }}">Dashboard</a> <a href="{{ url_for('admin.conversations') }}">Conversations</a> <a href="{{ url_for('admin.logout') }}">Logout</a>
+    </div>
+    <table>
+        <thead>
+            <tr><th>ID</th><th>Name</th><th>Phone</th><th>City</th><th>Qty</th><th>Total (Rs)</th><th>Status</th><th>Date</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+            <tr>
+                <td>{{ order.id }}</td>
+                <td>{{ order.name }}</td>
+                <td>{{ order.phone }}</td>
+                <td>{{ order.city }}</td>
+                <td>{{ order.quantity }}</td>
+                <td>{{ order.total_price }}</td>
+                <td><span class="status {{ order.status }}">{{ order.status.title() }}</span></td>
+                <td>{{ order.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                <td>
+                    <select onchange="updateStatus({{ order.id }}, this.value)">
+
+
+                        <option value="pending" {% if order.status=='pending' %}selected{% endif %}>Pending</option>
+                        <option value="confirmed" {% if order.status=='confirmed' %}selected{% endif %}>Confirmed</option>
+                        <option value="shipped" {% if order.status=='shipped' %}selected{% endif %}>Shipped</option>
+                        <option value="delivered" {% if order.status=='delivered' %}selected{% endif %}>Delivered</option>
+                    </select>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <script>
+        async function updateStatus(id, status) {
+            const res = await fetch(`/admin/orders/${id}/status`, {
+                method: 'PATCH',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({status})
+            });
+            if (res.ok) location.reload();
+        }
+    </script>
+</body>
+</html>
+
