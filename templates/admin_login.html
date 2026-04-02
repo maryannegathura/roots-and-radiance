@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login - Roots & Radiance</title>
+    <style>
+        body { font-family: Arial; background: linear-gradient(to bottom, #228B22, #8B4513); color: #333; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-form { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); width: 300px; }
+        input { width: 100%; padding: 0.75rem; margin: 0.5rem 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; padding: 0.75rem; background: #228B22; color: white; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; }
+        button:hover { background: #1e7b1e; }
+        .flash { color: red; }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Admin Login</h2>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="flash">{{ messages[0] }}</div>
+            {% endif %}
+        {% endwith %}
+        <form method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+

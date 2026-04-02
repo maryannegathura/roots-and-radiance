@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        body { font-family: Arial; background: #f8f8f8; margin: 0; padding: 20px; }
+        .header { background: linear-gradient(#228B22, #90EE90); color: white; padding: 1rem; margin: -20px -20px 20px; text-align: center; }
+        .nav { display: flex; gap: 20px; justify-content: center; }
+        .nav a { color: white; text-decoration: none; padding: 10px 20px; background: rgba(255,255,255,0.2); border-radius: 5px; }
+        .nav a:hover { background: rgba(255,255,255,0.3); }
+        .logout { position: absolute; top: 20px; right: 20px; color: white; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Roots & Radiance Admin Dashboard</h1>
+        <a href="{{ url_for('admin.logout') }}" class="logout">Logout</a>
+    </div>
+    <div class="nav">
+        <a href="{{ url_for('admin.conversations') }}">View Conversations</a>
+        <a href="{{ url_for('admin.orders') }}">Manage Orders</a>
+    </div>
+</body>
+</html>
+

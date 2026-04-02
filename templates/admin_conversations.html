@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversations - Admin</title>
+    <style>
+        body { font-family: Arial; background: #f8f8f8; margin: 0; padding: 20px; }
+        .header { background: linear-gradient(#228B22, #90EE90); color: white; padding: 1rem; margin: -20px -20px 20px; }
+        table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #8B4513; color: white; }
+        .session-detail { cursor: pointer; }
+        .messages { display: none; background: #f0f0f0; padding: 10px; margin-top: 10px; }
+        .user { color: #228B22; font-weight: bold; }
+        .bot { color: #8B4513; }
+        a { color: #228B22; float: right; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Chat Conversations</h1>
+        <a href="{{ url_for('admin.dashboard') }}">Dashboard</a> <a href="{{ url_for('admin.logout') }}">Logout</a>
+    </div>
+    <table>
+        <thead>
+            <tr><th>ID</th><th>Session ID</th><th>User</th><th>Created</th><th>Messages</th></tr>
+        </thead>
+        <tbody>
+            {% for session, msg_count in sessions %}
+            <tr>
+                <td>{{ session.id }}</td>
+                <td>{{ session.session_id[:8] }}...</td>
+                <td>{{ session.user_name or 'Anonymous' }}</td>
+                <td>{{ session.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                <td>{{ msg_count }}</td>
+            </tr>
+            <tr class="session-detail" onclick="toggleMessages('msg{{ session.id }}')">
+                <td colspan="5">
+                    <div id="msg{{ session.id }}" class="messages">
+                        <!-- Messages loaded via JS or pre-render; simplify pre-render query -->
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <script>
+        function toggleMessages(id) {
+            const div = document.getElementById(id);
+            div.style.display = div.style.display === 'none' ? 'block' : 'none';
+            // Load messages via AJAX if needed
+        }
+    </script>
+</body>
+</html>
+
